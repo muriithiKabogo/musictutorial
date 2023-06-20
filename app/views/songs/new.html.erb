@@ -1,0 +1,9 @@
+<h2>Upload a new MP3: Pleas make sure it is only MP3, I will otherwise crash</h2>
+<%= form_with model: @song, url: songs_path, local: true do |form| %>
+    <%= form.file_field :audio %>
+    <%= form.submit %>
+<% end %>
+
+<p>
+	<%=link_to :Listen_to_music, songs_path%>
+</p>
